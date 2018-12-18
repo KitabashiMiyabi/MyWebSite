@@ -3,66 +3,120 @@
 .shopImg {
 	width: 600px;
 }
-
-/* 二重線の枠 */
-.mybox{
- background: none;
- border: 1px solid #f3cbd0;	/* 線の太さ・種類・色 */
- margin: 15px 10px; /* 外側の余白 上下・左右 */
- padding: 20px; /* 内側の余白 */
- position: relative;
-}
-.mybox:before{
- background-color: #fff;
- content: 'ABOUT';
- padding: 2px 10px; /* タイトルの余白 上下・左右 */
- position: absolute;
- top: -10px;
- left: 30px;
- text-align: center;
-}
-.mybox:after{
- background: none;
- border: 1px solid #f3cbd0;	/* 線の太さ・種類・色 */
- content: '';
- position: absolute;
- top: 3px;
- left: 3px;
- width: 100%;
- height: 100%;
- z-index: -1;
+.shopImg2 {
+	width: 600px;
+	float: left;
 }
 
-/* a */
-.mybox2{
- border: 1px solid #ef858c;	/* 線の太さ・種類・色 */
- border-radius: 5px;
- padding: 45px 10px 10px 10px;	/* 内側の余白 上・右・左・下 */
+
+
+/* 二重線 */
+h2 {
+ border: 1px solid #f0bdc4;	/* 内側の線の太さ・種類・色 */
+ margin: 20px 10px; /* 外側の余白 上下・左右 */
+ padding: 10px; /* 内側の余白 */
  position: relative;
  z-index: 0;
 }
-.mybox2:before{
- background-color: #ef858c;	/* タイトル部分背景色 */
- border-radius: 5px 5px 0px 0px;
- color: #fff;	/* タイトル部分文字色 */
- content: 'TITLE';
- height: 25px;	/* タイトル部分高さ */
- padding: 5px 10px;
+h2:before {
+ border: 2px solid #f0bdc4;	/* 外側の線の太さ・種類・色 */
+ content: '';
+ display: block;
  position: absolute;
- top: 0;
- left: 0;
- right: 0;
- z-index: 2;
+ top: -8px;
+ bottom: -8px;
+ left: -8px;
+ right: -8px;
+ z-index: -1;
 }
-.mybox2:after {
- border-style: solid;
- border-width: 10px 10px 0 10px;
- border-color: #ef858c transparent transparent transparent;	/* 吹き出し三角部分の色 */
- content: "";
+
+
+.mybox{
+ background: none;
+ border: 1px solid #f0bdc4;/* 線の太さ・種類・色 */
+ margin: 20px 10px; /* 外側の余白 */
+ padding: 10px; /* 内側の余白 */
+ position: relative;
+ z-index: 0;
+}
+.mybox:after{
+ background: none;
+ border: 2px solid #f0bdc4;	/* 線の太さ・種類・色 */
+ content: '';
+
  position: absolute;
- top: 35px;
- left: 10px;
- width: 0px;
- height: 0px;
- z-index: 1;
+ top: -8px;
+ left: -8px;
+ width: -8px;
+ height: -8px;
+ z-index: -1;
+}
+
+
+
+/* 区切り */
+.hr-text {
+	line-height: 1em;
+	position: relative;
+	outline: 0;
+	border: 0;
+	color: black;
+	text-align: center;
+	height: 1.5em;
+	opacity: .5;
+}
+.hr-text:before {
+	content: '';
+	background: -webkit-linear-gradient(left, transparent, #818078, transparent);
+	background: linear-gradient(to right, transparent, #818078, transparent);
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 100%;
+	height: 1px;
+}
+.hr-text:after {
+	content: attr(data-content);
+	position: relative;
+	display: inline-block;
+	color: black;
+	padding: 0 .5em;
+	line-height: 1.5em;
+	color: #818078;
+	background-color: #fcfcfa;
+}
+
+
+
+
+/* ピン付き枠 */
+.mybox2{
+ border: 1px solid #ccc;	/* 線の太さ・種類・色 */
+ box-shadow:1px 1px 6px 0px #ccc;
+ padding: 50px 10px 10px 10px;	/* 内側の余白 上・右・下・左 */
+ position: relative;
+ z-index: -2
+}
+.mybox2:before{
+ background-image: -webkit-gradient(radial, 30% 30%, 0, 30% 30%, 10, from(#ffe5ed), to(#e50044));	/* マップピンの色 */
+ border-radius: 50%;
+ box-shadow: .5px .5px 4px 1px rgba(128, 128, 128, 0.5);
+ content: '';
+ display: block;
+ position: absolute;
+ top: 5px;
+ left: 50%;
+ width: 15px;
+ height: 15px;
+ z-index: 0;
+}
+.mybox2:after{
+ background-image: linear-gradient(-80deg, transparent 47%, #333333 47%, #333333 52%, transparent 52%, transparent);
+ content: '';
+ position: absolute;
+ top: 15px;
+ left: 50%;
+ width: 10px;
+ height: 13px;
+ z-index: -1;
 }
