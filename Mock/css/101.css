@@ -1,6 +1,19 @@
 @charset "UTF-8";
 
 
+/* 大枠 */
+.waku {
+  background: #ffffff;
+  width: 530px;
+  border: 1px solid #AAAAAA;
+  box-shadow: 0px 0px 10px;
+  max-width: 100%;
+  heigh: auto;
+}
+
+
+
+
 /* menu タイトル */
 .nname {
 	line-height: 2.5em;
