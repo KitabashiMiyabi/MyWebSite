@@ -65,8 +65,46 @@ a.btn:hover {
 
 }
 
+/* 	白文字 */
+.s {
+	font-weight: 300;
+	font-size: 35px;
+	color: #FFFFFF;
+	font-family: 'Times New Roman',sans-serif;
+	text-align: center;
+}
+
+/* 	白文字２ */
+.s2 {
+	font-weight: 800;
+	font-size: 120px;
+	color: #FFFFFF;
+	font-family: 'Times New Roman',sans-serif;
+	text-align: center;
+}
+
+/* 	白文字３ */
+.s3 {
+	font-weight: 50;
+	font-size: 25px;
+	color: #FFFFFF;
+	font-family: 'Times New Roman',sans-serif;
+	text-align: center;
+}
+
+/* 	白文字４ */
+.s4 {
+	font-weight: 70;
+	font-size: 15px;
+	color: #FFFFFF;
+	font-family: 'Times New Roman',sans-serif;
+	text-align: center;
+}
+
+
 /* CONTACT */
 .p2 {
+
 	font-weight: 400;
 	font-size: 30px;
 	color: black;
@@ -138,6 +176,30 @@ a:hover {
 .titlebar {
 
 }
+
+/* クーポン枠 */
+.cou{
+  position: relative;
+  background: linear-gradient(
+    -45deg,
+    #fff 25%, #fbc6cc 25%,
+    #fbc6cc 50%, #fff 50%,
+    #fff 75%, #fbc6cc 75%,
+    #fbc6cc
+  );
+  background-size: 8px 8px;
+  padding: 8px;
+  border: 10px solid #fbc6cc;
+}
+.cou_inner{
+  background: #fbc6cc;
+  padding: .5em;
+}
+h3{
+  margin: 0 0 .5em;
+}
+
+
 
 /* 二重線 */
 .frame {
