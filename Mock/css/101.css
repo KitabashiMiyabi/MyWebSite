@@ -1,6 +1,26 @@
 @charset "UTF-8";
 
 
+
+
+/* ボタン */
+a.btn {
+	display: block;
+	width: 160px;
+	padding: 0.8em;
+	text-align: center;
+	text-decoration: none;
+	color: #EC407A;
+	border: 2px solid #EC407A;
+	border-radius: 3px;
+	transition: .4s;
+}
+a.btn:hover {
+	background: #EC407A;
+	color: #fff;
+}
+
+
 /* 大枠 */
 .waku {
   background: #ffffff;
@@ -11,6 +31,15 @@
   heigh: auto;
 }
 
+/* ページタイトル */
+.pt{
+	color: pink;
+	font-size: 8ex;
+	font-family: "YuGothic M";
+  	src: local("Yu Gothic Medium"),
+    	 local("Yu Gothic");
+ 	font-weight: 500;
+}
 
 
 
@@ -50,6 +79,12 @@
 .shopImg {
 	width: 600px;
 }
+
+.shopImgs {
+	width: 150px;
+	margin: 0 auto;
+}
+
 .shopImg2 {
 	width: 530px;
 	max-width: 100%;
@@ -61,6 +96,10 @@
 
 .line {
 	width: 50px;
+}
+.card {
+	width: 300px;
+	margin: 0 auto;
 }
 
 /* リンク */
@@ -76,7 +115,29 @@ a:hover {
 .㎎ {
 	float: right;
 }
+/* 中寄せ */
+.nk {
+	text-align: center;
+}
 
+
+
+/* 右寄せ２ */
+.mg2{
+	text-align: right;
+}
+
+/* 両端 */
+.subject {
+   text-align: left;  /* 文章を左寄せする(※) */
+   float: left;     /* 左端に寄せて、後続を右側へ回り込ませる */
+}
+.date {
+   text-align: right; /* 文章を右寄せする */
+}
+.titlebar {
+
+}
 
 /* 二重線 */
 .frame {
