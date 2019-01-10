@@ -5,7 +5,7 @@
 
 /* ボタン */
 a.btn {
-	display: block;
+	display: inline-block;
 	width: 160px;
 	padding: 0.8em;
 	text-align: center;
@@ -17,6 +17,23 @@ a.btn {
 }
 a.btn:hover {
 	background: #EC407A;
+	color: #fff;
+}
+
+/* ボタン2 */
+a.btn2 {
+	display: inline-block;
+	width: 160px;
+	padding: 0.8em;
+	text-align: center;
+	text-decoration: none;
+	color: #FFBEDA;
+	border: 2px solid #FFBEDA;
+	border-radius: 3px;
+	transition: .4s;
+}
+a.btn2:hover {
+	background: #FFBEDA;
 	color: #fff;
 }
 
@@ -101,6 +118,38 @@ a.btn:hover {
 	text-align: center;
 }
 
+/* 	灰文字 */
+.gr {
+	font-weight: 70;
+	font-size: 20px;
+	color: #808080;
+	font-family: 'Times New Roman',sans-serif;
+}
+
+
+/* 	ピンク文字 */
+.pnk {
+	font-weight: 70;
+	font-size: 20px;
+	color: #FF97C2;
+	font-family: 'Times New Roman',sans-serif;
+}
+
+/* 	黒文字 */
+.blk {
+	font-weight: 70;
+	font-size: 30px;
+	color: #555555;
+	font-family: 'Times New Roman',sans-serif;
+}
+
+/* 	大灰文字 */
+.grbig {
+	font-weight: 70;
+	font-size: 80px;
+	color: #BBBBBB;
+	font-family: 'Times New Roman',sans-serif;
+}
 
 /* CONTACT */
 .p2 {
@@ -113,6 +162,7 @@ a.btn:hover {
 }
 
 
+/* 画像 */
 
 .shopImg {
 	width: 600px;
@@ -126,7 +176,7 @@ a.btn:hover {
 .shopImg2 {
 	width: 530px;
 	max-width: 100%;
-	heigh:auto;
+	height:auto;
 }
 .insta {
 	width: 40px;
@@ -140,13 +190,21 @@ a.btn:hover {
 	margin: 0 auto;
 }
 
+.smp {
+	width: 500px;
+	height: 270px;
+}
+
+
+
 /* リンク */
-a {color: pink;
+a {
+	color: pink;
   text-decoration: none;
   }
 a:hover {
   color: gray;
-  font-weight: bold
+  font-weight: bold;
   }
 
 /* 右寄せ */
